@@ -19,6 +19,7 @@
 .book__img-wrapper img {
   box-shadow: 15px 15px 40px 0px rgba(0,0,0,0.28);
   height: 100%;
+  max-width: 150px;
 }
 
 .book__info {
@@ -35,6 +36,7 @@
   font-weight: 300;
   text-decoration: underline;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .book__title {

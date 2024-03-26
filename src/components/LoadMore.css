@@ -1,0 +1,16 @@
+.loadmore__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px 20px 100px;
+}
+
+.loadmore__btn {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 20px;
+  padding: 10px 25px;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}

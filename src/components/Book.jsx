@@ -6,10 +6,10 @@ Book.propTypes = {
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   authors: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  categories: PropTypes.array.isRequired,
 };
 
-export function Book({ src, alt, title, category, authors }) {
+export function Book({ src, alt, title, categories, authors }) {
   return (
     <li className="books__item">
       <article className="book">
@@ -18,7 +18,7 @@ export function Book({ src, alt, title, category, authors }) {
         </div>
 
         <div className="book__info">
-          <p className="book__category">{category} </p>
+          <p className="book__category">{categories}</p>
           <h3 className="book__title">{title}</h3>
           <p className="book__authors">{authors}</p>
         </div>
