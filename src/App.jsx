@@ -24,20 +24,22 @@ function App() {
     };
 
     fetchData();
-  }, []);
+  }, [category]);
+
+  const handleCategoryChange = (category) => {
+    setCategory(category);
+  };
 
   return (
     <div>
+      <Categories onChangeCategory={handleCategoryChange} />
       <ul className="books">
         {books.map((book) => (
           <Book
             key={book.id}
             src={book.volumeInfo.imageLinks.thumbnail}
             alt={book.volumeInfo.title}
-            category={
-              (book.volumeInfo.categories && book.volumeInfo.categories.join(', ')) ||
-              'Без категории'
-            }
+            category={book.volumeInfo.categories || 'Без категории'}
             title={book.volumeInfo.title || 'Навания нет'}
             authors={
               (book.volumeInfo.authors && book.volumeInfo.authors.join(', ')) ||

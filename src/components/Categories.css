@@ -1,0 +1,7 @@
+select, option {
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding: 5px 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
